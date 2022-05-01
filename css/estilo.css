@@ -1,0 +1,146 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+/* header */
+header{
+    background-image: url(https://miro.medium.com/max/1400/1*G-R4fhGC60t4ULXg9W7Yig.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 10px;
+
+}
+h1{
+    color: rgb(27, 31, 27);
+    text-align: center;
+    font-size: 2rem;
+} 
+.menu{
+    width: 90%;
+    margin: 20px auto;
+    text-decoration: none;
+    text-align: center;
+}
+.menu li{
+    text-align: center;
+    position: relative;
+    list-style: none;
+
+}
+.menu li a{
+    color:#ffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+.menu li a:hover{
+    background-color: aqua;
+    color: blueviolet;
+    border-radius: 50%;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul ul li{
+    display: block;
+}
+ul li:hover ul{
+    display: block;
+    background-color: violet;
+}
+/* Body */
+body{
+    background: linear-gradient(to top, rgb(26, 0, 128), rgb(46, 34, 179), rgb(0, 255, 229));
+}
+/* main */
+h3{
+    text-align: center;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(177, 36, 60);
+}
+.imagenes{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galeria-productos{
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    grid-template-areas:  
+    "pic1 pic2 pic3 pic4"
+    "pic5 pic6 pic7 pic8";
+    grid-gap: 5px;
+}
+.mochilas{
+    grid-area: pic1;
+}
+.muñequeras{
+    grid-area: pic2;
+}
+.zapatillas{
+    grid-area: pic3;
+}
+.riñoneras{
+    grid-area: pic4;
+}
+.cartera{
+    grid-area: pic5;
+}
+.tobillera{
+    grid-area: pic6;
+}
+.cartuchera{
+    grid-area: pic7;
+}
+.portacelular{
+    grid-area: pic8;
+}
+/* footer */
+
+.piedepagina{
+    display: flex;
+    justify-content: center;
+    background-color:blue;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+    flex-wrap: wrap;
+
+}
+.contenedor-footer{
+    flex-direction: row;
+    background-color: yellow;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    list-style: none;
+    border: 2px solid black;       
+}
+
+/* responsive */
+          
+@media (max-width:500px){
+    .galeria-productos{
+        background-color: aqua;
+        grid-template-columns: repeat (1, 1fr);
+        grid-template-rows: repeat (4, 1fr) ;
+        grid-template-areas:  
+        "pic1 pic2"         
+        "pic3 pic4"
+        "pic5 pic6" 
+        "pic7 pic8";}
+}

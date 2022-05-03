@@ -1,0 +1,45 @@
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #b1243c; }
+  
+  .imagenes {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  
+  .galeria-productos {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat 4, 1fr;
+    grid-template-rows: repeat 2, 1fr;
+    grid-template-areas: "pic1 pic2 pic3 pic4"
+   "pic5 pic6 pic7 pic8";
+    grid-gap: 5px; }
+  
+  .mochilas {
+    grid-area: pic1; }
+  
+  .muñequeras {
+    grid-area: pic2; }
+  
+  .zapatillas {
+    grid-area: pic3; }
+  
+  .riñoneras {
+    grid-area: pic4; }
+  
+  .cartera {
+    grid-area: pic5; }
+  
+  .tobillera {
+    grid-area: pic6; }
+  
+  .cartuchera {
+    grid-area: pic7; }
+  
+  .portacelular {
+    grid-area: pic8; }

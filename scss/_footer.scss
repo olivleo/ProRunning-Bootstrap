@@ -1,0 +1,19 @@
+.piedepagina {
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+    flex-wrap: wrap; }
+  
+  .contenedor-footer {
+    flex-direction: row;
+    background-color: yellow;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    list-style: none;
+    border: 2px solid black; }

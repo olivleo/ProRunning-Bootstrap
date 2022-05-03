@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  /* Body */
+  body {
+    background: linear-gradient(to top, #1a0080, #2e22b3, #00ffe5); }
+
+    
+    @import "header";
+    @import "main";
+    @import "footer";
+    @import "responsive";   
+  
+
+  
+  
